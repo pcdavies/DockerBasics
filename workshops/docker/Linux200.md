@@ -487,15 +487,15 @@ In this section you will make a couple of changes to the AlphaOfficeUI applicati
 
 - Copy the new background image into the container
 - Connect into the AlphaOfficeUI container
-- install the vim text editor
+- Install the vim text editor
 - Fix a typo and specify the new background image
 - Save (docker commit) a copy of the changes to a NEW docker image
 - Start up and test another AlphaOfficeUI container using the NEW image
 - Push the NEW image to your personal Docker Hub account
 
-## Container in-place modifications
+## Container In-place Modifications
 
-### **STEP 1**: Copy a new Background Image
+### **STEP 1**: Copy a New Background Image
 
 Copy a background image file into the running AlphaOfficeUI container. This file is in your YOUR_HOME/AlphaOfficeSetup directory that you GIT cloned at the beginning of the lab
 
