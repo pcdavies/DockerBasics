@@ -8,7 +8,7 @@
 
 - Your client enviroment **must be configured prior** to attempting the Hands-on-Workshop labs.
 - You will need to obtain a Docker Hub account at: [Docker Hub](https://hub.docker.com/)
-- You have two options for configuring your workshop client environment: 
+- You have two options for configuring your workshop client environment:
      - ***Option 1:*** You can install Virtual Box and download and run a pre-configured **Virtual Box Image**.
      - ***Option 2:*** You can **install and configure** Docker on your laptop. Installation will be OS specific. For Windows OR Mac the documentation assumes a "Docker Toolbox" installation (although you could also use the "Docker for Windows - Hyper-V" installation which requires specific levels of the Windows OS). Linux installs; depending on your flavor of Linux can be installed via "yum" or "apt-get". There are many references on the web for installing docker on your specific version of Linux. Please refer to one of the the Student Guides below.
 
@@ -18,7 +18,7 @@
       
 ## How to View the Lab Guides
 
-- The Lab Guides are best viewed using the Workshop [GitHub Pages Website URL](https://oracle.github.io/learning-library/workshops/docker/) 
+- The Lab Guides are best viewed using the Workshop [GitHub Pages Website URL](https://oracle.github.io/learning-library/workshops/docker/)
 - Once you are viewing the Workshop's GitHub Pages website, you can select from a list of OS specific Lab Guides at any time by clicking on the **Play-with-Docker** drop list:
 
     ![](images/WorkshopMenu3.png)

@@ -2,7 +2,7 @@
 
 ## IMPORTANT: How to prepare for this workshop
 
-- This workshop documentation is best viewed by [clicking this link](https://wvbirder.github.io/docker/workshops/docker/) ***fix before posting to oracle github***
+- This workshop documentation is best viewed by [clicking this link](https://oracle.github.io/learning-library/workshops/docker/)
 
 ## Configure your Client Environment
 
