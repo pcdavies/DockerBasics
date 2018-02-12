@@ -47,7 +47,7 @@ If you chose to use your own Linux setup then login and verify that the Docker e
 
 ### **STEP 2**: Verify that Docker is running
 
-- Type:
+- Type the following into your terminal window:
 ```
 cd
 docker version
@@ -61,18 +61,17 @@ The information on your docker engine should be displayed:
 
 This will create a directory called AlphaOfficeSetup in your $HOME directory.
 
-- Cut and Paste OR type the following:
+Cut and paste or type the following:
 ```
 git clone https://github.com/wvbirder/AlphaOfficeSetup.git
 ```
-
 ![](images/200Linux/Picture200-3.png)
 
 ### **STEP 4**: Set Permissions
 
 We will be mounting the AlphaOfficeSetup directory to a directory within the Docker database container. To ensure that the "oracle" user (Oracle database) or "root" user (MYSQL database) inside of your database container will have RW capabilites to the HOST's volume run:
 
-- Type:
+- Type the following into your terminal window:
 ```
 chmod -R 777 Alpha* 
 ```
@@ -82,7 +81,7 @@ chmod -R 777 Alpha*
 
 When prompted enter your username/password. Example shown here:
 
-- Type:
+- Type the following into your terminal window:
 ```
 docker login
 ```
@@ -95,7 +94,7 @@ docker login
 
 In this section your going to chose and setup a datasource for the application. You have a choice between an Oracle 12c database or a MYSQL database. As the steps and commands are slightly different pick one of the flows that follow below. You will start up a database container, connect into the container and run a script that loads the application's schema into the database.
 
-**NOTE: <span style="color:red">You only have to set up ONE database (Oracle or MYSQL) to use with the AlphaOffice application but can go through the setup of both if you'd like.</span>**
+__**NOTE: You only have to set up ONE database (Oracle or MYSQL) to use with the AlphaOffice application but can go through the setup of both if you'd like.__**
 
 ## Oracle Database Setup
 
@@ -122,7 +121,7 @@ Let's take a look at what the docker **run** command options do:
 
 - Type OR cut and paste (all on one line) the following; substituting your path "**\<YOUR-HOME>**" where you download the AlphaofficeSetup GIT repository files:
 ```
-docker run -d -it --name orcl -h='oracledb-ao' -p=1521:1521 -p=5600:5600 -v /\<YOUR-HOME>/AlphaOfficeSetup:/dbfiles wvbirder/database-enterprise:12.2.0.1-slim
+docker run -d -it --name orcl -h='oracledb-ao' -p=1521:1521 -p=5600:5600 -v /<YOUR-HOME>/AlphaOfficeSetup:/dbfiles wvbirder/database-enterprise:12.2.0.1-slim
 ```
 
 Example:
@@ -187,7 +186,7 @@ sqlplus / as sysdba
 
 Once in SQLPLus type:
 ```
-@setupAlphaOfficeOracle.sql
+@setupAlphaOracle.sql
 ```
 
 ![](images/200Linux/Picture200-10.png)
@@ -211,7 +210,7 @@ docker ps
 
 ![](images/200Linux/Picture200-12.png)
 
-### **STEP 6**: Log into Enterprise Manager Express (**optional**)
+### **STEP 6**: Log into Enterprise Manager Express (**Optional**)
 
 Enterprise Manager Express comes bundled with the Oracle database you just created which is running in a container.
 HTTP access as been defined on port 5600.
@@ -220,9 +219,20 @@ HTTP access as been defined on port 5600.
 
 **NOTE:** If you want to login to Enterprise Manager Express the browser needs the Shockwave add-on installed. Install this into your browser environment by going to the adobe webite and downloading the player from: https://get.adobe.com/shockwave/
 
-**<span style="color:red">If you are using the workshop VirtualBox VM Shockwave has already been installed and you will only have to enable it.</span>**
+**If you are using the workshop VirtualBox VM Shockwave has already been installed and you will only have to enable it.**
 
-- Go to URL: **http://locahost:5600/em**
+- From your terminal window execute the following command.
+
+```
+docker network inspect bridge
+```
+- Locate the orcl container and collect your network bridge IP. 
+
+![](images/200Linux/Picture200-12.7.png)
+
+- Insert your container IP address and navigate to the URL: **http://<container IP address>:5600/em**
+
+![](images/200Linux/Picture200-12.8.png)
 
 - You may get prompted to enable Adobe Flash. Click the link to do so.
 
@@ -262,7 +272,7 @@ Let's take a look at what the docker **run** command options do:
   "-v" This maps the directory where you downloaded the AlphaOfficeSetup GIT
     repository to the /dbfiles directory within the container 
 
-- Type OR cut and paste the following substituting your path "**\<YOUR-HOME>**" where you download the AlphaofficeSetup GIT repository files:
+- Type or cut and paste the following substituting your path "**\<YOUR-HOME>**" where you download the AlphaofficeSetup GIT repository files:
 ```
 docker run -d -it --name mysql -h='mysqldb-ao' -p=3306:3306 -v /\<YOUR-HOME>/AlphaOfficeSetup:/dbfiles --env="MYSQL_ROOT_PASSWORD=Alpha2017_" mysql
 ```
@@ -350,7 +360,7 @@ docker ps
 
 ![](images/200Linux/Picture200-20.png)
 
-# Deploy supporting AlphaOffice containers
+# Deploy Supporting AlphaOffice Containers
 
 In this section of the lab you will deploy the remaining containers to support the AlphaOffice application
 
@@ -376,7 +386,7 @@ This docker image will download the first time, extract and run the container.
 docker ps
 ```
 
- to dsplay all running containers. In this example the MYSQL database and the Twitterfeed containers are seen:
+ to display all running containers. In this example the MYSQL database and the Twitterfeed containers are seen:
 
 ![](images/200Linux/Picture200-21.png)
 
@@ -388,11 +398,16 @@ docker ps
 
 ### **STEP 2**: Run and test the RESTClient
 
+-Stop the RESTClient container started in Lab 100 by entering the following commands.
+```
+docker stop restclient
+```
+
 Let's take a look at what the docker **run** command options do:
   "-d" flag runs the container in the background
 
   "-it" flags instructs Docker to allocate a pseudo-TTY connected to the
-    container’s stdin, creating an interactive bash capable shell in the container (which we will use in a moment when we connect into the container)
+    container's stdin, creating an interactive bash capable shell in the container (which we will use in a moment when we connect into the container)
 
   "--rm" When this container is stopped all resources associated with it (storage, etc) will be deleted
 
@@ -406,56 +421,57 @@ Let's take a look at what the docker **run** command options do:
 
 **NOTE: This example assumes we are using the MYSQL database as the datasource**. If you choose to use the Oracle database then that command is in the **ALERT** shown below. 
 
-- Type OR cut and paste:
+- Type or cut and paste:
 ```
  docker run -d -it --rm --name restclient -p=8002:8002 --link mysql:mysqldb-ao -e MYSQL_HOST='mysqldb-ao' -e DS='mysql' wvbirder/restclient
- ```
+```
 
- <span style="color:red">ALERT: If you are using the Oracle database as the datasource the docker command would be:</span>
+__ALERT: If you are using the Oracle database as the datasource the docker command would be:__
 ```
  docker run -d -it --rm --name restclient -p=8002:8002 --link orcl:oracledb-ao -e ORACLE_CONNECT='oracledb-ao/orclpdb1.localdomain' -e DS='oracle' wvbirder/restclient
- ```
+```
 
- - Type:
- ```
+- Type to display all running containers::
+```
  docker ps
- ```
+```
  
- to dsplay all running containers:
-
 ![](images/200Linux/Picture200-23.png)
 
-Go to the browser, open up a new tab and enter: **http://localhost:8002/products**
+Go to the browser, open up a new tab and enter: 
+
+__**http://localhost:8002/products**__
 
 A list of ALL products are shown:
 
 ![](images/200Linux/Picture200-24.png)
 
 You can also query an individual product. In the browser, open up a new tab and enter:
-```
-http://localhost:8002/product/1025
-```
 
-**NOTE:** In the URL that "**product**" is singular
+__**http://localhost:8002/product/1025**__
+
+**NOTE:** In the URL that "**product**" is singular.
 
 ![](images/200Linux/Picture200-25.png)
 
-**SIDEBAR:** If you don't want use a database as the datasource you can always fall back to a JSON file of the Products by using:
-- docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/restclient
+__**SIDEBAR:**__
+If you don't want use a database as the datasource you can always fall back to a JSON file of the Products by using:
+```
+docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/restclient
+```
 
-**OPTONAL:** If you configured both ORACLE and MYSQL databases then you can stop the "restclient" container after testing with one of the datasources by typing: **docker stop restclient**. Then, start another "restclient" container stipulating the new datasource using the appropriate commands already shown at the beginning of this step.
+__**OPTONAL:** __
+If you configured both ORACLE and MYSQL databases then you can stop the "restclient" container after testing with one of the datasources by typing: **docker stop restclient**. Then, start another "restclient" container stipulating the new datasource using the appropriate commands already shown at the beginning of this step.
 
-### **STEP 3**: Run and test the AlphaOfficeUI
+### **STEP 3**: Run and Test the AlphaOfficeUI
 
-- Type OR cut and paste:
+- Type or cut and paste:
 ```
 docker run -d --name=alphaofficeui -p=8085:8085 wvbirder/alpha-office-catalog-ui
 ```
 
 After it is running test the completed application deployment by going to the browser, and opening a new tab:
-```
-http://localhost:8085
-```
+__**http://localhost:8085**__
 
 You should see something like:
 
