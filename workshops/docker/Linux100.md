@@ -7,15 +7,13 @@ Updated: January 24, 2018
 
 ## Overview
 
-What is Docker? What is a container?
+What is Docker? What is a container? Docker is both the company and containerization technology.
 
-Docker is the company and containerization technology.
+[https://docs.docker.com](https://docs.docker.com)
 
-https://docs.docker.com
+Simply put, a container is a runtime instance of a docker image.
 
-A container is a runtime instance of a docker image.
-
-https://docs.docker.com/glossary/?term=container
+[https://docs.docker.com/glossary/?term=container](https://docs.docker.com/glossary/?term=container)
 
 Containers have been around for many years. Docker created a technology that was usable by mere humans, and was much easier to understand than before. Thus, has enjoyed a tremendous amount of support for creating a technology for packaging applications to be portable and lightweight.
 
@@ -23,11 +21,9 @@ Containers have been around for many years. Docker created a technology that was
 
 ![](images/100Linux/Picture025-1.png)
 
-While containers may sound like a virtual machine (VM), the two are distinct technologies. With VMs each virtual machine includes the application, the necessary binaries and libraries and the entire guest operating system.
-
-Whereas, Containers include the application, all of its dependencies, but share the kernel with other containers and are not tied to any specific infrastructure, other than having the Docker engine installed on it’s host – allowing containers to run on almost any computer, infrastructure and cloud.
-
-**Note:** At this time, Windows and Linux containers require that they run on their respective kernel base, therefore, Windows containers cannot run on Linux hosts and vice versa.
+While containers may sound like a virtual machine (VM), the two are distinct technologies. With VMs each virtual machine includes the application, the necessary binaries and libraries and the entire guest operating system. Whereas, Containers include the application, all of its dependencies, but share the kernel with other containers and are not tied to any specific infrastructure, other than having the Docker engine installed on it’s host – allowing containers to run on almost any computer, infrastructure and cloud.
+**Note:** 
+At this time, Windows and Linux containers require that they run on their respective kernel base, therefore, Windows containers cannot run on Linux hosts and vice versa.
 
 ## Introduction
 In this lab we introduce some basic concepts of Docker, container architectures and functions.  We will do this using a single container which provides a REST service as part of a node.js application.  The application has two pieces, which provide a microservice.
@@ -41,7 +37,7 @@ Please direct comments to: Matthew.Orsie@oracle.com or Richard.Wark@oracle.com
 
 ## Objectives
 
-- Deploy and test a simple docker container running a simple application
+- Deploy and test a simple Docker container running a simple application
 - Introduce and use the Docker Hub registry
 - Familiarize yourself with Docker commands (ps, run, exec)
 - Understand foundational concepts of container networking and filesystem mapping
@@ -50,8 +46,7 @@ Please direct comments to: Matthew.Orsie@oracle.com or Richard.Wark@oracle.com
 ## Required Artifacts
 
 - Docker Hub Account
-- Docker and GIT installed in your own Linux environment (this guide is tailored to Linux) you can decide if you want to run locally
-    - OR, you can use an available Linux based VirtualBox image
+- Docker and GIT installed in your own Linux environment (this guide is tailored to Linux) you can decide if you want to run locally or, you can use an available Linux based VirtualBox image
 
 # Start up and login into your Linux environment
 
@@ -171,7 +166,7 @@ If you change your browsers port to 18002, you can now see that localhost is usi
 You can get various bits of information of the subnet that docker container is running on by inspecting the default network bridge docker creates out-of-the-box. You can create your own networks and assign containers to them but that is out of the scope of this lab. 
 
  - Type:
- ```
+```
 docker network inspect bridge
 ```
 
@@ -179,7 +174,11 @@ Get information of all the containers running on the defualt bridge. At this poi
 
 ![](images/100Linux/Picture100-10.png)
 
-- **ping** your restclient container IP Address: (in this example 172.17.0.2)
+- Ping your restclient container IP Address: (in this example the IP was 172.17.0.2)
+
+```
+ping 172.17.0.2
+```
 
 ![](images/100Linux/Picture100-11.png)
 
