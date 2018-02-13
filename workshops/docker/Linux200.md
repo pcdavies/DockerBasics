@@ -501,7 +501,7 @@ Copy a background image file into the running AlphaOfficeUI container. This file
 
 - Type (substituting **\<YOUR-HOME>**)
 ```
-docker cp \<YOUR_HOME>/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/source/public/Images
+docker cp /<YOUR_HOME>/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/source/public/Images
 ```
 
   Example: docker cp /home/holuser/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/source/public/Images
@@ -542,9 +542,7 @@ ls /pipeline/source/public/Images
 ```
 vim /pipeline/source/public/alpha.html
 ```
-  Fix the header title to read "**Alpha Office Product Listing**"
-
-  You can also change the body title to whatever you want:
+  Move the cursor to the text you wish to edit and press the letter __i__ to make changes. Fix the header title to read "**Alpha Office Product Listing**". You can also change the body title to whatever you want:
 
 ![](images/200Linux/Picture200-29.png)
 
