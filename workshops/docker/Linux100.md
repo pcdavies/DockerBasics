@@ -110,7 +110,7 @@ docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/rest
 
 ### **STEP 5**: Check the running image's container
 
-Again using the docker ps command, we should see our newly spawned docker container
+Again using the `docker ps` command, we should see our newly spawned docker container
 
 - **Type** the following:
 
@@ -124,7 +124,11 @@ docker ps
 
 ### **STEP 6**: Check the Application with a browser
 
-- Navigate in a browser to: **http://localhost:8002/**
+- Navigate in a browser to:
+
+```
+http://localhost:8002/
+```
 
 ![](images/100Linux/Picture100-6.png)
 
