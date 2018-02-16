@@ -196,4 +196,10 @@ ping 172.17.0.2
 
 ![](images/100Linux/Picture100-11.png)
 
+- Finally, **STOP** the `restclient` container as we will be re-using it in Lab 200 by **typing**:
+
+```
+docker stop restclient
+```
+
 **This completes the Lab!**
