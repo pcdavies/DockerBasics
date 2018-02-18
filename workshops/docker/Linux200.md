@@ -235,7 +235,7 @@ docker network inspect bridge
 
 ![](images/200Linux/Picture200-12.7.png)
 
-- Insert your container IP address and navigate to the URL (In this example 172.17.0.3): `http:/172.17.0.3/:5600/em`
+- Insert your container IP address and navigate to the URL (In this example 172.17.0.3): `http:/172.17.0.3/:5600/em`. ( Note: You could also use `http://localhost:5600/em` )
 
 ![](images/200Linux/Picture200-12.8.png)
 
