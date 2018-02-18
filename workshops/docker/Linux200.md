@@ -466,10 +466,10 @@ http://localhost:8002/product/1025
 
 ![](images/200Linux/Picture200-25.png)
 
-**SIDEBAR:** If you don't want use a database as the datasource, you can always stop the current **restclient** and fall back to a version that uses a JSON file for the Products buy using: `docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/restclient`
+**SIDEBAR:** If you don't want use a database as the datasource, you can always stop the current `restclient` and fall back to a version that uses a JSON file for the Products buy using: `docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/restclient`
 
 **OPTONAL:**
-If you configured both ORACLE and MYSQL databases then you can stop the "restclient" container after testing with one of the datasources by typing: `docker stop restclient`. Then, start another "restclient" container stipulating the new datasource using the appropriate commands already shown at the beginning of this step.
+If you configured both ORACLE and MYSQL databases then you can stop the `restclient` container after testing with one of the datasources by typing: `docker stop restclient`. Then, start another `restclient` container stipulating the new datasource using the appropriate commands already shown at the beginning of this step.
 
 ### **STEP 3**: Run and Test the AlphaOfficeUI
 
