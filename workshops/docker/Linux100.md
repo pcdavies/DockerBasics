@@ -100,7 +100,7 @@ We will now download and create a container based on an existing docker image st
     - "-p" Port 8002 is mapped from the container to port 8002 on the HOST
     - "-e" Environment variables used by the application. "DS" setting designates the JSON datasource.
 
-- **Type** the following (all on one line):
+- **Type OR cut and paste** the following (all on one line):
 
 ``` 
 docker run -d -it --rm --name restclient -p=8002:8002 -e DS='json' wvbirder/restclient
