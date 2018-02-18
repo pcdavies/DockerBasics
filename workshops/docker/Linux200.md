@@ -27,7 +27,7 @@ You will use various Docker commands to setup, run and connect into containers. 
 
 ## Required Artifacts
 
-- Docker Hub Account
+- Docker Hub Account: [Docker Hub](https://hub.docker.com/)
 - Docker and GIT installed in your own environment
     - OR, you can use an available Linux based VirtualBox image
 
