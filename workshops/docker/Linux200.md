@@ -371,7 +371,7 @@ docker ps
 
 In this section of the lab you will deploy the remaining containers to support the AlphaOffice application
 
-- **TwitterFeed**: This **java** application provides static Twitter posts (via a JSON file) via REST calls. The AlphaOffice UI mmakes calls to this container and associates the twitter posts to products displayed in the UI.
+- **TwitterFeed**: This **java** application provides static Twitter posts (via a JSON file) via REST calls. The AlphaOffice UI makes calls to this container and associates the twitter posts to products displayed in the UI.
 
 - **ClientREST**: This **Node.js** application makes REST calls to the selected datasource (Oracle or MYSQL) and returns details from the Product Catalog tables. Selection of the datasource is parameter driven.
 
