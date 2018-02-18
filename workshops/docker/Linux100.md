@@ -138,7 +138,7 @@ http://localhost:8002/
 
 ### **STEP 7**: Stop the Container
 
-- Since we started the restclient container with the --rm option upon stopping it docker will remove ALL allocated resources
+- Since we started the `restclient` container with the --rm option upon stopping it docker will remove ALL allocated resources
 
 - **Type** the following:
 
