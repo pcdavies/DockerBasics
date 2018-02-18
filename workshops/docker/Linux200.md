@@ -381,7 +381,7 @@ In this section of the lab you will deploy the remaining containers to support t
 
 ### **STEP 1**: Run and test the TwitterFeed
 
-- **Type OR cut and paste**:
+- **Type OR cut and paste** the following:
 
 ```
 docker run -d --name=twitterfeed -p=9080:9080 wvbirder/twitterfeed
