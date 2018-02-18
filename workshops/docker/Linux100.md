@@ -89,7 +89,7 @@ docker ps
 
 ### **STEP 4**: Run the restclient docker image from docker hub
 
-We will now download and run an existing docker image which was created so that it will run with as a stand-alone application.  It uses a JSON formatted datafile to serve the test data via its exposed REST service. Docker looks for the designated image locally first before going to Docker HUB.
+We will now download and create a container based on an existing docker image stored in the Docker Hub. It uses a JSON formatted datafile to serve the test data via its exposed REST service. Docker looks for the designated image locally first before going to Docker HUB.
 
 - Let's take a look at what the docker **run** command options do:
     - "-d" flag runs the container in the background
