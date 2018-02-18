@@ -182,11 +182,11 @@ docker run -d -it --rm --name restclient -p=18002:8002 -e DS='json' wvbirder/res
 docker network inspect bridge
 ```
 
-- This returns information about all the containers running on the default bridge. We see that our "restclient" container is assigned IP Address 172.17.0.1. You can ping that address from the Host server.
+- This returns information about all the containers running on the default bridge. We see that our `restclient` container is assigned IP Address 172.17.0.1. You can ping that address from the Host server.
 
 ![](images/100Linux/Picture100-10.png)
 
-- Ping the restclient container IP Address: (in this example the IP was 172.17.0.2)
+- Ping the `restclient` container IP Address: (in this example the IP was 172.17.0.2)
 
 - **Type** the following:
 
