@@ -125,7 +125,7 @@ docker run -d -it --name orcl -h='oracledb-ao' -p=1521:1521 -p=5600:5600 -v /<YO
 ```
 
 Example:
-docker run -d -it --name orcl -h='oracledb-ao' -p=1521:1521 -p=5500:5500 -p=5600:5600 -v /home/holuser/AlphaOfficeSetup:/dbfiles wvbirder/database-enterprise:12.2.0.1-slim
+docker `run -d -it --name orcl -h='oracledb-ao' -p=1521:1521 -p=5600:5600 -v /home/holuser/AlphaOfficeSetup:/dbfiles wvbirder/database-enterprise:12.2.0.1-slim`
 
 ***If you make a mistake with the volume path to where you downloaded the AlphaOfficeSetup files you can stop and remove the container once it's created and try again using the following commands***
 
