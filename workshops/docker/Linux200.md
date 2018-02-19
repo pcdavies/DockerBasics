@@ -604,7 +604,7 @@ docker images
 
 ### **STEP 2**: Start a container based on your new image
 
-Since there is already a running alphaofficeui container we'll name the new container alphaofficeui2 and use port 8086 on the HOST since 8085 is in use
+Since there is already a running `alphaofficeui` container we'll name the new container `alphaofficeui2` and use port 8086 on the HOST since 8085 is in use
 
 - **Type** the following:
 
