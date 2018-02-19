@@ -198,7 +198,7 @@ sqlplus / as sysdba
 
 ![](images/200Linux/Picture200-11.png)
 
-- Type:
+- **Type** the following:
 ```
 exit
 ```
