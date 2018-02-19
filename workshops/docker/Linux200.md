@@ -590,7 +590,7 @@ In this step you will save a copy of your modifed docker container and give it a
 docker commit alphaofficeui (your-dockerhub-account)/(image-name)
 ```
   
-- For example: "docker commit alphaofficeui wvbirder/alphaoffice-new"
+- Example: `docker commit alphaofficeui wvbirder/alphaoffice-new`
 
 - **Type** the following:
 
