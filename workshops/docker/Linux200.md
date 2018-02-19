@@ -604,15 +604,17 @@ docker images
 
 ### **STEP 2**: Start a container based on your new image
 
-Since there is already a running `alphaofficeui` container we'll name the new container `alphaofficeui2` and use port 8086 on the HOST since 8085 is in use
+Since there is already a running `alphaofficeui` container we'll name the new container `alphaofficeui2` and use port 8086 on the HOST since 8085 is in use. We will also use the PORT enviroment variable.
 
 - **Type** the following:
 
 ```
-docker run -d --name=alphaofficeui2 -p=8086:8085 (your-dockerhub-account)/(image-name)
+docker run -d --name=alphaofficeui2 -p=8086:8086 -e PORT=8086 (your-dockerhub-account)/(image-name)
 ```
 
-- Verify the new container is running:
+- Example: `docker run -d --name=alphaofficeui2 -p=8086:8086 -e PORT=8086 wvbirder/alphaoffice-new`
+
+- Verify the new container is running by **typing**:
 
 ```
 docker ps
