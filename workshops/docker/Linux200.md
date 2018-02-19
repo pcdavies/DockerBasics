@@ -202,7 +202,8 @@ sqlplus / as sysdba
 ```
 exit
 ```
-to go back to the HOST
+
+- to go back to the HOST
 
 ### **STEP 5**: Verify container is running 
 
@@ -225,19 +226,13 @@ HTTP access as been defined on port 5600.
 
 - **If you are using the workshop VirtualBox VM Shockwave has already been installed and you will only have to enable it.**
 
-- From your terminal window **type** the following command:
+- In your browser **enter**:
 
 ```
-docker network inspect bridge
+http://localhost:5600/em
 ```
 
-- Locate the "orcl" container and note your network bridge IP. 
-
-![](images/200Linux/Picture200-12.7.png)
-
-- Insert your container IP address and navigate to the URL (In this example 172.17.0.3): `http:/172.17.0.3/:5600/em`. ( Note: You could also use `http://localhost:5600/em` )
-
-![](images/200Linux/Picture200-12.8.png)
+![](images/200Linux/Picture200-12.6.png)
 
 - You may get prompted to enable Adobe Flash. Click the link to do so.
 
