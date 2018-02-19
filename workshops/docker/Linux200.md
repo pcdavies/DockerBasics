@@ -319,7 +319,7 @@ Once into the container you will see a prompt which includes the hostname you se
 
 ```
 cd /dbfiles
-touch xxx
+touch yyy
 ls
 ```
 
