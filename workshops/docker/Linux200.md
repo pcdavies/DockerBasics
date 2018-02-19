@@ -402,12 +402,6 @@ docker ps
 
 ### **STEP 2**: Run and test the RESTClient
 
-- Stop the RESTClient container started in Lab 100 by **entering** the following commands.
-
-```
-docker stop restclient
-```
-
 - Let's take a look at what the docker **run** command options do:
     - "-d" flag runs the container in the background
     - "-it" flags instructs Docker to allocate a pseudo-TTY connected to the
