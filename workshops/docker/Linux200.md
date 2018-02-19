@@ -512,7 +512,7 @@ docker cp /<YOUR_HOME>/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/so
 
 Even though the orginal AlphaOfficeUI image could have been set up ahead of time with any needed client tools we're adding the the environment on-the-fly to give you some idea that it can be done
 
-- Connect into the "alphaofficeui" container:
+- Connect into the `alphaofficeui` container:
 
 ```
 docker exec -it alphaofficeui bash
