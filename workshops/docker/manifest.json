@@ -5,7 +5,7 @@
         "interactive":"https://launch.oracle.com/?docker101",
         "versions": [
             {
-              "name": "Play-With-Docker",
+              "name": "Play-with-Docker",
               "description": "",
               "imageUrl": "https://pcdavies.github.io/DockerBasics/workshops/docker/images/docker.png"
             },
