@@ -2,7 +2,7 @@
     "workshop": {
         "title": "Docker Workshop",
         "description": "These labs will give you a basic understanding of Docker concepts and deployments.",
-        "interactive":"https://launch.oracle.com/?docker101",
+        "interactive":"https://launch.oracle.com/?docker-workshop",
         "versions": [
             {
               "name": "Play-with-Docker",
