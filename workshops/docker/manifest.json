@@ -7,7 +7,7 @@
             {
               "name": "Play-With-Docker",
               "description": "",
-              "imageUrl": "https://oracle.github.io/learning-library/workshops/docker/images/common/docker.png"
+              "imageUrl": "https://pcdavies.github.io/DockerBasics/workshops/docker/images/docker.png"
             },
             {
               "name": "Mac",
