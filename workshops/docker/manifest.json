@@ -3,6 +3,28 @@
         "title": "Docker Workshop",
         "description": "These labs will give you a basic understanding of Docker concepts and deployments.",
         "interactive":"https://launch.oracle.com/?docker101",
+        "versions": [
+            {
+              "name": "Play-With-Docker",
+              "description": "",
+              "imageUrl": "https://oracle.github.io/learning-library/workshops/docker/images/common/docker.png"
+            },
+            {
+              "name": "Mac",
+              "description": "",
+              "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/mac.png"
+            },
+            {
+              "name": "Linux",
+              "description": "",
+              "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/linux.png"
+            },
+            {
+              "name": "Windows",
+              "description": "",
+              "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/windows.png"
+            }
+        ],
         "labs": [
             {
                 "number": "0",
