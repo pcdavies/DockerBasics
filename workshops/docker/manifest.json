@@ -6,22 +6,22 @@
         "versions": [
             {
               "name": "Play-with-Docker",
-              "description": "",
+              "description": "Download a pre-configured Virtual Box image and being learning Docker in minutes.",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/docker/images/docker.png"
             },
             {
               "name": "Mac",
-              "description": "",
+              "description": "Learn how to setup your MAC to Develop with Docker and perform this workshop.",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/mac.png"
             },
             {
               "name": "Linux",
-              "description": "",
+              "description": "Learn how to setup your Linux OS to Develop with Docker and perform this workshop.",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/linux.png"
             },
             {
               "name": "Windows",
-              "description": "",
+              "description": "Learn how to setup Windows to Develop with Docker and perform this workshop.",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/windows.png"
             }
         ],
