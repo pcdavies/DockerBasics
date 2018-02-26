@@ -1,27 +1,27 @@
 {
     "workshop": {
         "title": "Docker Workshop",
-        "description": "These labs will give you a basic understanding of Docker concepts and deployments.",
+        "description": "These labs will give you a basic understanding of Docker concepts and deployments",
         "interactive":"https://launch.oracle.com/?docker-workshop",
         "versions": [
             {
               "name": "Play-with-Docker",
-              "description": "Download a pre-configured Virtual Box image and being learning Docker in minutes.",
+              "description": "An on-line interface to begin learning Docker",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/docker/images/docker.png"
             },
             {
               "name": "Mac",
-              "description": "Learn how to setup your MAC to Develop with Docker and perform this workshop.",
+              "description": "Use your MAC to develop and deploy with Docker and perform this workshop",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/mac.png"
             },
             {
               "name": "Linux",
-              "description": "Learn how to setup your Linux OS to Develop with Docker and perform this workshop.",
+              "description": "Use Linux to develop and deploy with Docker and perform this workshop",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/linux.png"
             },
             {
               "name": "Windows",
-              "description": "Learn how to setup Windows to Develop with Docker and perform this workshop.",
+              "description": "Use Windows to develop and deploy with Docker and perform this workshop",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/windows.png"
             }
         ],
