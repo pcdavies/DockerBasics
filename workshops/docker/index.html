@@ -88,7 +88,7 @@
     </md-sidenav>
 
     <!--  LAB GUIDE VERSION SELECTION PAGE -->
-    <h4 class="infra version-heading" ng-show="hasMultipleVersions && selection == 'chooseVersion'">Please Select a Workshop Version:<h5><font color="Crimson">NOTE: A Virtual Box VM (Linux) is available as an alternative)</h5></font></h6></h4>
+    <h4 class="infra version-heading" ng-show="hasMultipleVersions && selection == 'chooseVersion'">Please Select a Workshop Version:<font size="-2" color="Crimson">NOTE: A Virtual Box VM (Linux) is available as an alternative</font></h6></h4>
     <div class="version-box" ng-show="hasMultipleVersions && selection == 'chooseVersion'">
       <div ng-repeat="thisVersion in versionsAvailable" class="version-content">
         <md-toolbar ng-class="{ infra: true }" md-theme="theme-{{$index}}" flex="none" layout-padding>
