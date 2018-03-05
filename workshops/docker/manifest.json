@@ -16,7 +16,7 @@
             },
             {
               "name": "Linux",
-              "description": "Download a pre-configured Virtual Box image and begin learning Docker.",
+              "description": "Use Linux to develop and deploy with Docker and perform this workshop",
               "imageUrl": "https://oracle.github.io/learning-library/workshops/common-content/images/common/linux.png"
             },
             {
