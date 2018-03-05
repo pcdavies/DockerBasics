@@ -9,7 +9,7 @@
 - Your client environment **must be configured prior** to attempting the Hands-on-Workshop labs.
 - You will need to obtain a Docker Hub account at: [Docker Hub](https://hub.docker.com/)
 - You have two options for configuring your workshop client environment:
-    - ***Option 1:*** You can install Virtual Box and download and run a pre-configured **Virtual Box Image**.
+    - ***Option 1:*** You can install Virtual Box and download and run a pre-configured **[Virtual Box Image](https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF3AECCFE80C8B381E41E491F6C3FF17C1177E4725F3/folder/F81AC36043787ED102DC77DDF6C3FF17C1177E4725F3/_Docker_VM)**.
     - ***Option 2:*** You can **install and configure** Docker on your laptop. Installation will be OS specific. For Windows OR Mac the documentation assumes a "Docker Toolbox" installation (although you could also use the "Docker for Windows - Hyper-V" installation which requires specific levels of the Windows OS). Linux installs; depending on your flavor of Linux can be installed via "yum" or "apt-get". There are many references on the web for installing docker on your specific version of Linux. Please refer to one of the the Student Guides below.
 
 - **Virtual Box set up and generic Docker installation is documented** in the [Student Guide](StudentGuide.md).
