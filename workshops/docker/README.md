@@ -14,7 +14,7 @@ This Docker workshop will walk you through using common docker commands, downloa
 
 ***NOTE: Play-with-Docker will only let you do Lab 100***
 
-##
+## Get right to Lab 100
 
 ### **Step 1**: Obtain a Docker Account (Optional for using Play-with-Docker)
 
