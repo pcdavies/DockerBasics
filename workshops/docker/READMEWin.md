@@ -1,4 +1,4 @@
-# Workshop Overview (Linux) 
+# Workshop Overview (Windows) 
 
 ![](images/studentguide/Title.png)
 
