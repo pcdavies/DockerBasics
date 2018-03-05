@@ -106,13 +106,13 @@ You will use 7-zip to reassemble the 7 part file. It will extract an OVF and VMD
 
 ### **Step 1**: Obtain a Docker Account
 
-- If you do not have a Docker Hub account please go to [Docker Hub](https://hub.docker.com/), fill out the fiels illustrated below and press signup.
+- If you do not have a Docker Hub account please go to [Docker Hub](https://hub.docker.com/), fill out the fields illustrated below and press signup.
 
     ![](images/studentguide/docker_signup.png)
 
 ### **Step 2**: Install Docker on your Linux OS
 
-- Navigate to https://docs.docker.com/install/ and follow the instructions specific to your operation system.
+- Navigate to [Docker Installation](https://docs.docker.com/install/) and follow the instructions specific to Linux.
 
 ### **STEP 3**: Begin Lab 100
 
