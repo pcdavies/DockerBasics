@@ -14,11 +14,13 @@ This Docker workshop will walk you through using common docker commands, downloa
 
 ***NOTE: Play-with-Docker will only let you do Lab 100***
 
-## Obtain a Docker Account (Optional for using Play-with-Docker)
+##
 
-### **Step 1**: Obtain a Docker Account
+### **Step 1**: Obtain a Docker Account (Optional for using Play-with-Docker)
 
-- If you do not have a Docker Hub account please go to [Docker Hub](https://hub.docker.com/), fill out the fiels illustrated below and press signup.
+***NOTE: If you decide to use one of the other options to do this workshop (Linux, Mac, Windows) then you'll need a docker account***
+
+- If you do not have a Docker Hub account please go to [Docker Hub](https://hub.docker.com/), fill out the fields illustrated below and press signup.
 
 ![](images/studentguide/docker_signup.png)
 
