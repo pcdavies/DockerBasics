@@ -112,7 +112,7 @@ You will use 7-zip to reassemble the 7 part file. It will extract an OVF and VMD
 
 ### **Step 2**: Install Docker on your Windows OS
 
-- Navigate to [Docker Installation](https://docs.docker.com/install/) and follow the instructions specific to Windows (`Windows Toolbox Installation`).
+- Navigate to [Docker Installation](https://docs.docker.com/toolbox/toolbox_install_windows/) and follow the instructions specific to Windows (`Windows Toolbox Installation`).
 
 ### **STEP 3**: Begin Lab 100
 
