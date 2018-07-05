@@ -21,8 +21,8 @@
             {
                 "number": "050",
                 "filename": "Linux050.md",
-                "title": "Lab 050: ",
-                "description": "Infrastructure Set Up",
+                "title": "Lab 050: Cloud Infrastructure",
+                "description": "Setting up the Infrastructure yo support a Compute Instance",
                 "labels": {"version": "Linux Trial Account"}
             },
             {
