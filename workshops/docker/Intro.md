@@ -17,10 +17,12 @@ To learn more about this workshop please watch the video below.
 
   ![](images/050Linux/code_9.png)
 
-
-
 ### **Step 2**: Navigate to Lab 050
 
 - _You can see a list of Lab Guides_ by clicking on the **Menu Icon** in the upper left corner of the browser window. You're now ready to continue with **Lab 100**.
 
-  ![](images/LabMenuIcon.png)
+
+
+  ![](images/Introham.PNG)
+  
+  ![](images/Introham2.PNG)
