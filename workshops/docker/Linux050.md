@@ -41,24 +41,18 @@ In this lab we will obtain an Oracle Cloud Trial Account, create ssh key pairs, 
 
 - If running from Windows: [Putty and PuttyGen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-# Get a Trial Account and Create Infrastructure
+# Log into  your Trial Account and Create Infrastructure
 
 You will create all required infrastructure components within your Trail account.
 
-## Obtain a Trial Account
+## Your Trial Account
 
-### **Step 1**: Acquire an Oracle Cloud Trial Account
+### **Step 1**: Your Oracle Cloud Trial Account
 
-- If you do not have a trial account please click on this URL [cloud.oracle.com/tryit](http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17), and complete all the required steps to get your free Oracle Cloud Trial Account.
-
-- You will eventually receive the following email after your account has been provisioned:
-
-![](images/050Linux/code_9.png)
+- You have already applied for and received you're Oracle Cloud Trial Account and will change the efault password...
 
 
 ### **STEP 2**: Log in to your OCI dashboard
-
-- **You must wait until you receive this email above** indicating that your Cloud Account has been provisioned. _Please note that this email may arrive in your spam or promotions folder pending your email settings._
 
 - Once you receive the **Get Started with Oracle Cloud** Email, make note of your **Username, Password and Cloud Account Name**.
 
