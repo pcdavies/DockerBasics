@@ -185,7 +185,7 @@ docker network inspect bridge
 - **Type** the following:
 
 ```
-ping 172.17.0.2
+ping 172.17.0.2 -c3
 ```
 
 ![](images/100Linux/Picture100-11.png)
