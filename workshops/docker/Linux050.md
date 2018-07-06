@@ -154,7 +154,7 @@ A security list provides a virtual firewall for an instance, with ingress and eg
 
     ![](images/050Linux/18.PNG)
 
-For the purposes of the upcoming Docker deployments we need to add three Ingress Rules that allow access from the Internet to ports 9080, 8002, 18002, 5600, and 8085. In a production environment only the UI port (8085) would typically be opened for access but the labs will have us test various other Application and Oracle centric functionality as we go, thus the need to open other ports.
+For the purposes of the upcoming Docker deployments we need to add five Ingress Rules that allow access from the Internet to ports 9080, 8002, 18002, 5600, and 8085. In a production environment only the UI port (8085) would typically be opened for access but the labs will have us test various other Application and Oracle centric functionality as we go, thus the need to open other ports.
 
 - Click **Edit All Rules** and then select **+Add Rule**
 
@@ -211,7 +211,7 @@ Before we create the Compute instance that will contian Docker and application d
 
 **NOTE:** `This step focuses on key pair generation for Linux or Mac based terminal sessions. If your going to run your terminal sessions from a Windows client then skip to STEP 7`
 
-- In a `Linux/Mac` client terminal window **Type** the following (You don't have to worry about any passphrases unless you want to enter one)
+- In a `Linux/Mac` client terminal window **Type** the following (**You don't have to worry about any passphrases unless you want to enter one**)
 
 ```
 ssh-keygen -b 2048 -t rsa -f dockerkey
@@ -287,7 +287,7 @@ After a few minutes you should see a running instance with a Public IP Address.
    ![](images/050Linux/30.PNG)
 
 
-### **STEP 8**: SSH into the Instance and install Docker
+### **STEP 9**: SSH into the Instance and install Docker
 
 The last set up piece will be to SSH into the Compute image and install Docker and GIT.
 
@@ -331,7 +331,7 @@ ssh -i ./dockerkey opc@129.213.119.105
 
   ![](images/050Linux/37.PNG)
 
-### **STEP 9**: Install and configure Docker and GIT
+### **STEP 10**: Install and configure Docker and GIT
 
 Docker and GIT are required for the subsuquent labs. You will install the Docker engine, enable it to start on re-boot, grant docker privledges to the `opc` user and finally install GIT.
 
@@ -373,7 +373,7 @@ git --version
 
    ![](images/050Linux/41.PNG)
 
-### **STEP 10**: Edit /etc/sysconfig/selinux
+### **STEP 11**: Edit /etc/sysconfig/selinux
 
 To ensure that permissive mode survives re-boots please edit `/etc/sysconfig/selinux`
 
