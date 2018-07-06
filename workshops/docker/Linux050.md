@@ -360,7 +360,7 @@ yum install git
 
    ![](images/050Linux/40.PNG)
 
-- **Type** the following:
+- **Type** the following to verify good installations:
 
 ```
 su - opc
@@ -369,13 +369,11 @@ docker images
 git --version
 ```
 
-- If the following commands run without error as the `opc` user then you are ready to proceed to Lab 100.
-
    ![](images/050Linux/41.PNG)
 
 ### **STEP 11**: Edit /etc/sysconfig/selinux
 
-To ensure that permissive mode survives re-boots please edit `/etc/sysconfig/selinux`
+Set the server to Permissive mode and also ensure that permissive mode survives re-boots by editing `/etc/sysconfig/selinux`
 
 - Using vi, change the SELINUX line to **permissive**. **Type** the following: (**NOTE**: You need to be the root user to edit this file)
 
@@ -387,5 +385,27 @@ vi /etc/sysconfig/selinux
    ![](images/050Linux/42.png)
 
 - Save the file and exit out of vi
+
+- Now, **Type** the following:
+
+```
+setenforce 0
+sestatus
+```
+
+- Verify that your server is in permissive mode.
+
+   ![](images/050Linux/43.PNG)
+
+- **Type** the following to exit out of `root` and go back to the `opc` user:
+
+```
+exit
+id
+```
+
+   ![](images/050Linux/44.PNG)
+
+- You are ready to proceed to Lab 100
 
 **This completes the Set Up!**
