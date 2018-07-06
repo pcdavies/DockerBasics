@@ -197,14 +197,12 @@ sqlplus / as sysdba
 
 ![](images/200Linux/Picture200-11.png)
 
-- **Type** the following:
+- **Type** the following to exit out of the DB container and go back to the HOST:
 ```
 exit
 ```
 
-- to go back to the HOST
-
-### **STEP 5**: Verify container is running 
+### **STEP 5**: Verify container is still running 
 
 - **Type** the following:
 
@@ -362,11 +360,18 @@ select count(*) from PRODUCTS;
 
 ![](images/200Linux/Picture200-19.png)
 
-- You should see 57 records in the PRODUCTS table. Enter **exit, (TWICE)** to return to the HOST
+- You should see 57 records in the PRODUCTS table. **Enter exit TWICE**, first to exit out of MYSQL and the second to exit out of the container and return to the HOST.
+
+```
+exit
+exit
+```
+
+  ![](images/200Linux/Picture200-19-2.png)
 
 ### **STEP 6**: Verify that container is running
 
-- **Type** the following:
+- **Type** the following to verify that the DB container is still running:
 
 ```
 docker ps
@@ -514,7 +519,7 @@ In this section you will make a couple of changes to the AlphaOfficeUI applicati
 
 Copy a background image file into the running AlphaOfficeUI container. This file is in the <YOUR_HOME>/AlphaOfficeSetup directory that you GIT cloned at the beginning of the lab
 
-- **Type** (substituting **\/home/opc**)
+- **Type** (substituting **/home/opc**)
 
 ```
 docker cp /home/opc/AlphaOfficeSetup/dark_blue.jpg alphaofficeui:/pipeline/source/public/Images
