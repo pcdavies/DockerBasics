@@ -17,7 +17,7 @@ To learn more about this workshop please watch the video below.
 
   ![](images/050Linux/code_9.png)
 
-### **Step 2**: Navigate to Lab 050
+**Step 2**: Navigate to Lab 050
 
 - _You can see a list of Lab Guides_ by clicking on the **Menu Icon** hamburger in the upper left corner of the browser window. Then, **Select Lab 050: Cloud Infrastructure Configuration**.
 
