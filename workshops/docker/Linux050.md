@@ -377,9 +377,10 @@ git --version
 
 To ensure that permissive mode survives re-boots please edit `/etc/sysconfig/selinux`
 
-- Using vi, change the SELINUX line to **permissive**. **Type** the following:
+- Using vi, change the SELINUX line to **permissive**. **Type** the following: (**NOTE**: You need to be the root user to edit this file)
 
 ```
+sudo -s
 vi /etc/sysconfig/selinux
 ```
 
