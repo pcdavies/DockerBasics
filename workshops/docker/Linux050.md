@@ -397,11 +397,11 @@ sestatus
 
    ![](images/050Linux/43.PNG)
 
-- **Type** the following to exit out of `root` and go back to the `opc` user:
+- **Type** the following to exit out of `root` and go back and verify that you're now the `opc` user:
 
 ```
 exit
-id
+whoami
 ```
 
    ![](images/050Linux/44.PNG)
