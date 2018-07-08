@@ -1,4 +1,4 @@
-# Containerized Development and Deployment with Docker Workshop
+# Containerized Development and Deployment with Docker
 
 Welcome to the Oracle Public Cloud Docker Development and Deployment workshop. This workshop will walk you through the process of creating an infrastructure to support deployment of a multi-container Docker application (AlphaOffice) in the Oracle Public Cloud. 
 To learn more about this workshop please watch the video below.
