@@ -12,7 +12,7 @@ To learn more about this workshop please watch the video below.
 
 - Bookmark this page for future reference.
 
-- Please click on the URL to create your Free Account <a href="http://cloud.oracle.com/tryit&intcmp=DeveloperInnovation-HOL-11NOV17" target="_trial">cloud.oracle.com/tryit</a>, and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a $300 credit that will enable you to complete the lab for free.  Additionally, you'll have 1000s of hours left over to continue to explore the Oracle Cloud.
+- Please click on the URL to create your Free Account <a href="https://myservices.us.oraclecloud.com/mycloud/signup?language=en&sourceType=:ex:tb:::RC_PDMK180212P00140:Docker_HOL&SC=:ex:tb:::RC_PDMK180212P00140:Docker_HOL&pcode=PDMK180212P00140" target="_trial">cloud.oracle.com/tryit</a>, and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a $300 credit that will enable you to complete the lab for free.  Additionally, you'll have 1000s of hours left over to continue to explore the Oracle Cloud.
 
   - Soon after requesting your trial you will receive the following email.
 
