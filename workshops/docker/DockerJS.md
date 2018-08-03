@@ -186,7 +186,7 @@ The output above shows the Creation Date, container status, The process ID (`235
 - **Type** the following:
 
 ```
-docker ps -ef | grep <PID>
+ps -ef | grep <PID>
 ```
 
 You'll see a Node.js application `server.js` running:
